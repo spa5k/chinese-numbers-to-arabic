@@ -1,0 +1,59 @@
+{
+  "name": "chinese-numbers-to-arabic",
+  "description": "Convert Chinese numbers into their Arabic Format",
+  "version": "0.0.1",
+  "author": "Unbuttun",
+  "bugs": {
+    "url": "https://github.com/Unbuttun/chinese-numbers-to-arabic/issues"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.11",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-galex": "^2.16.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.4",
+    "tslib": "^2.3.0",
+    "tsup": "^4.13.1",
+    "typescript": "^4.3.5"
+  },
+  "homepage": "https://github.com/Unbuttun/chinese-numbers-to-arabic#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "arabic",
+    "chinese",
+    "chinese-to-english",
+    "numbers"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unbuttun/chinese-numbers-to-arabic.git"
+  },
+  "scripts": {
+    "build": "tsup-node",
+    "format": "prettier --write .",
+    "lint": "eslint src --ext .ts",
+    "test": "jest"
+  },
+  "typings": "dist/index.d.ts"
+}
