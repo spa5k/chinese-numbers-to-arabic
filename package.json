@@ -1,7 +1,7 @@
 {
   "name": "chinese-numbers-to-arabic",
   "description": "Convert Chinese numbers into their Arabic Format",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Unbuttun",
   "bugs": {
     "url": "https://github.com/Unbuttun/chinese-numbers-to-arabic/issues"
