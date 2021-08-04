@@ -24,6 +24,7 @@
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
+    "release-it": "^14.10.1",
     "ts-jest": "^27.0.4",
     "tslib": "^2.3.0",
     "tsup": "^4.13.1",
@@ -53,7 +54,8 @@
     "build": "tsup-node",
     "format": "prettier --write .",
     "lint": "eslint src --ext .ts",
-    "test": "jest"
+    "test": "jest",
+    "release": "release-it"
   },
   "typings": "dist/index.d.ts"
 }
