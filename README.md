@@ -3,6 +3,7 @@
 ![banner](./assets/cn-numbers-to-arabic.png)
 
 Convert Chinese Numbers to their Arabic Counterpart.
+![npm](https://img.shields.io/npm/v/chinese-numbers-to-arabic?style=for-the-badge)
 
 ## Install
 
