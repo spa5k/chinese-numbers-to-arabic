@@ -15,8 +15,8 @@
     "dist"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
     "@release-it/conventional-changelog": "^3.0.1",
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.11",
