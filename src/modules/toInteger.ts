@@ -55,7 +55,7 @@ export const toInteger = (source: string): number => {
     const stringBeforeMaan = str.slice(0, Math.max(0, maanLocation));
 
     let convertedNumberBeforeMaan;
-    if (stringBeforeMaan && stringBeforeMaan.trim()) {
+    if (stringBeforeMaan?.trim()) {
       convertedNumberBeforeMaan = toInteger(stringBeforeMaan);
     } else {
       convertedNumberBeforeMaan = 1; // for cases like 萬五

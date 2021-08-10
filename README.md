@@ -58,6 +58,9 @@ toArabicString("4 000 000 RMB"); // 4000000 RMB
 toArabicString("這款車的價格從34.5萬港幣到55.4萬港幣。"); // 這款車的價格從345000港幣到554000港幣。
 ```
 
+### Visualization of this Repo.
+![Visualization of this repo](./diagram.svg)
+
 # Uighur
 
 Although this library is doing work related to Chinese language but it totally disagrees with Barbaric chinese way on genociding the Ethnic Uighur Community. Winnie the Pooh should start being a human again.
