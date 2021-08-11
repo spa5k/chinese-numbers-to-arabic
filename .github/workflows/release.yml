@@ -1,8 +1,9 @@
 name: Release
+
+# Run the workflow when a Pull Request is opened or when changes are pushed to master
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   runner-job:
@@ -29,9 +30,10 @@ jobs:
         run: curl -f https://get.pnpm.io/v6.7.js | node - add --global pnpm@6
       - name: Install deps
         run: pnpm install
-      - name: Build
-        run: pnpm build
-
+      - name: Linting
+        run: pnpm lint
+      - name: Test
+        run: pnpm test
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
