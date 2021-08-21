@@ -10,7 +10,7 @@ specifiers:
   '@semantic-release/npm': 7.1.3
   '@semantic-release/release-notes-generator': 9.0.3
   '@types/jest': 27.0.1
-  '@types/node': 16.4.13
+  '@types/node': 16.7.1
   dotenv: 10.0.0
   dotenv-cli: 4.0.0
   esbuild: 0.12.22
@@ -37,7 +37,7 @@ devDependencies:
   '@semantic-release/npm': 7.1.3_semantic-release@17.4.5
   '@semantic-release/release-notes-generator': 9.0.3_semantic-release@17.4.5
   '@types/jest': 27.0.1
-  '@types/node': 16.4.13
+  '@types/node': 16.7.1
   dotenv: 10.0.0
   dotenv-cli: 4.0.0
   esbuild: 0.12.22
@@ -1306,6 +1306,10 @@ packages:
 
   /@types/node/16.4.13:
     resolution: {integrity: sha512-bLL69sKtd25w7p1nvg9pigE4gtKVpGTPojBFLMkGHXuUgap2sLqQt2qUnqmVCDfzGUL0DRNZP+1prIZJbMeAXg==}
+    dev: true
+
+  /@types/node/16.7.1:
+    resolution: {integrity: sha512-ncRdc45SoYJ2H4eWU9ReDfp3vtFqDYhjOsKlFFUDEn8V1Bgr2RjYal8YT5byfadWIRluhPFU6JiDOl0H6Sl87A==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:

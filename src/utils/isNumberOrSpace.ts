@@ -10,7 +10,6 @@ import { cnNumbers } from "../utils/chars";
  *    numbers; rather, they mean that the number may continue. E.g. "6,000" or
  *    "6 000".
  */
-
 export const isNumberOrSpace = (character: string): boolean => {
   // Make sure `character`.length is exactly 1:
   if (!character || character.length !== 1) {

@@ -3,7 +3,6 @@
  * number or another character.
  * @returns {boolean} True if character is from 0 to 9.
  */
-
 export const isArabicNumber = (character: string): boolean => {
   if (!character || character.length !== 1) {
     throw new Error("Function isArabicNumber expects exactly one character.");
