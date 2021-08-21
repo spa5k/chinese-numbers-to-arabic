@@ -1,3 +1,4 @@
+import { afterManMultipliers, SINGLE_ARABIC_NUMBER_REGEX } from "./chars";
 /**
  * Checks whether the last number in the source string is a [萬万億亿], or
  * another number. Ignores non-number characters at the end of the string
@@ -8,9 +9,6 @@
  * number in the string is Arabic or a Chinese number other than the four
  * above.
  */
-
-import { afterManMultipliers, SINGLE_ARABIC_NUMBER_REGEX } from "./chars";
-
 export const sourceStringEndsWithAfterManNumber = (
   str: string
 ): string | null => {

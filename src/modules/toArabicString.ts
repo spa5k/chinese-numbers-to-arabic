@@ -1,17 +1,16 @@
+import { NUMBER_IN_STRING_REGEX } from "../utils";
+import { toInteger } from "./toInteger";
+
 /**
  * Converts multiple Chinese numbers in a string into Arabic numbers, and
  * returns the translated string containing the original text but with Arabic
  * numbers only.
- * @ param {number} [minimumCharactersInNumber] - Optionally, how many
+ * @param {number} [minimumCharactersInNumber] - Optionally, how many
  *    characters minimum must be in a number to be converted. Sometimes a
  *    good setting would be 2, because otherwise we will convert geographic
  *    names like 九龍站 into 9龍站.
  * @returns {string} The translated string with Arabic numbers only.
  */
-
-import { NUMBER_IN_STRING_REGEX } from "../utils";
-import { toInteger } from "./toInteger";
-
 export const toArabicString = (
   source: string,
   minimumCharactersInNumber = 1

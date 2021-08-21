@@ -6,7 +6,6 @@ import { cnNumbers } from "../utils/chars";
  * @returns {boolean} True if it's a Chinese number character or Chinese-style
  * Arabic numbers (０-９).
  */
-
 export const isChineseNumber = (character: string): boolean => {
   if (!character || character.length !== 1) {
     throw new Error("Function isChineseNumber expects exactly one character.");

@@ -1,11 +1,10 @@
+import { cnNumbers, reverseMultipliers } from "./chars";
+
 /**
  * Converts a string like 8千3萬 into 8千3百萬 (8300*10000).
  * @param {string} str - The original string.
  * @returns {string} The converted, expanded string.
  */
-
-import { cnNumbers, reverseMultipliers } from "./chars";
-
 export const addMissingUnits = (str: string): string => {
   const characters = str.split("");
   let result = "";

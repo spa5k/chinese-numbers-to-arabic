@@ -1,9 +1,3 @@
-/* eslint-disable sonarjs/cognitive-complexity */
-/**
- * Returns the result of the conversion of Chinese number into an `Integer`.
- * @returns {number} The Chinese number converted to integer.
- */
-
 import { addMissingUnits, sourceStringEndsWithAfterManNumber } from "../utils";
 import {
   afterManMultipliers,
@@ -12,6 +6,12 @@ import {
   SINGLE_ARABIC_NUMBER_REGEX,
 } from "../utils/chars";
 
+/* eslint-disable sonarjs/cognitive-complexity */
+/**
+ * Returns the result of the conversion of Chinese number into an `Integer`.
+ * @param {string} source string that you want to convert
+ * @returns {number} The Chinese number converted to integer.
+ */
 export const toInteger = (source: string): number => {
   let result = 0;
   let pairs: number[][] = [];
