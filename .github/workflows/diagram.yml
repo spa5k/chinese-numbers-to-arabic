@@ -3,7 +3,7 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - dev
+      - next
 jobs:
   get_data:
     runs-on: ubuntu-latest
