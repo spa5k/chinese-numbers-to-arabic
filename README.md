@@ -58,7 +58,34 @@ toArabicString("4 000 000 RMB"); // 4000000 RMB
 toArabicString("這款車的價格從34.5萬港幣到55.4萬港幣。"); // 這款車的價格從345000港幣到554000港幣。
 ```
 
+### Check whether a number is Chinese or not
+
+```ts
+import { isChineseNumber } from "chinese-numbers-to-arabic";
+
+isChineseNumber("abcd"); // false
+isChineseNumber("兩百四十五"); // true
+```
+
+### Check whether a number is Arabic or not
+
+```ts
+import { isArabicNumber } from "chinese-numbers-to-arabic";
+
+isArabicNumber("123123123"); // true
+isArabicNumber("兩百四十五"); // false
+```
+
+### Add missing units - Converts a string like 8千3萬 into 8千3百萬 (8300*10000).
+
+```ts
+import { addMissingUnits } from "chinese-numbers-to-arabic";
+
+addMissingUnits("8千3萬"); // 8千3百萬
+```
+
 ### Visualization of this Repo.
+
 ![Visualization of this repo](./diagram.svg)
 
 # Uighur
