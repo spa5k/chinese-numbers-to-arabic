@@ -17,7 +17,7 @@ export const sourceStringEndsWithAfterManNumber = (
   }
 
   // Split string into characters, reverse order:
-  const characters = str.split("").reverse();
+  const characters = [...str].reverse();
 
   for (const character of characters) {
     if (SINGLE_ARABIC_NUMBER_REGEX.test(character)) {

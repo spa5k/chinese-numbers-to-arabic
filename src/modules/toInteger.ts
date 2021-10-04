@@ -19,7 +19,7 @@ export const toInteger = (source: string): number => {
   let currentPair: number[] = [];
   let leadingNumber = Number.parseFloat(str);
 
-  if (str === null || str === undefined || str === "") {
+  if (!str || str === "") {
     throw new Error("Empty strings cannot be converted.");
   }
 
@@ -31,7 +31,7 @@ export const toInteger = (source: string): number => {
   // If the string does not contain Chinese numbers (like "345 abc"), we don't
   // have any business here:
   let atLeastOneChineseNumber = false;
-  for (const character of str.split("")) {
+  for (const character of str) {
     if (characters.includes(character)) {
       atLeastOneChineseNumber = true;
       break;

@@ -1,4 +1,4 @@
-import { cnNumbers } from "../utils/chars";
+import { cnNumbers } from "./chars";
 
 /**
  * Checks whether a character is a Chinese number character.

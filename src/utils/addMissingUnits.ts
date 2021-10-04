@@ -6,7 +6,7 @@ import { cnNumbers, reverseMultipliers } from "./chars";
  * @returns {string} The converted, expanded string.
  */
 export const addMissingUnits = (str: string): string => {
-  const characters = str.split("");
+  const characters = [...str];
   let result = "";
   const reverse = reverseMultipliers;
 
