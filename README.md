@@ -91,3 +91,5 @@ addMissingUnits("8千3萬"); // 8千3百萬
 # Uighur
 
 Although this library is doing work related to Chinese language but it totally disagrees with Barbaric chinese way on genociding the Ethnic Uighur Community. Winnie the Pooh should start being a human again.
+
+
