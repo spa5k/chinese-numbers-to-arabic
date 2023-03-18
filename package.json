@@ -8,16 +8,23 @@
     "chinese-to-english",
     "numbers"
   ],
-  "homepage": "https://github.com/Unbuttun/chinese-numbers-to-arabic#readme",
+  "homepage": "https://github.com/spa5k/chinese-numbers-to-arabic#readme",
   "bugs": {
-    "url": "https://github.com/Unbuttun/chinese-numbers-to-arabic/issues"
+    "url": "https://github.com/spa5k/chinese-numbers-to-arabic/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Unbuttun/chinese-numbers-to-arabic.git"
+    "url": "git+https://github.com/spa5k/chinese-numbers-to-arabic.git"
   },
   "license": "MIT",
-  "author": "Unbuttun",
+  "author": "spa5k",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
