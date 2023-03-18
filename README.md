@@ -76,7 +76,7 @@ isArabicNumber("123123123"); // true
 isArabicNumber("兩百四十五"); // false
 ```
 
-### Add missing units - Converts a string like 8千3萬 into 8千3百萬 (8300*10000).
+### Add missing units - Converts a string like 8 千 3 萬 into 8 千 3 百萬 (8300\*10000).
 
 ```ts
 import { addMissingUnits } from "chinese-numbers-to-arabic";
@@ -91,5 +91,3 @@ addMissingUnits("8千3萬"); // 8千3百萬
 # Uighur
 
 Although this library is doing work related to Chinese language but it totally disagrees with Barbaric chinese way on genociding the Ethnic Uighur Community. Winnie the Pooh should start being a human again.
-
-

@@ -41,7 +41,7 @@ export const toInteger = (source: string): number => {
     return Number.parseFloat(str) || 0;
   }
 
-  str = str.replace(/[,\s]/gu, ""); // remove commas, spaces
+  str = str.replaceAll(/[,\s]/gu, ""); // remove commas, spaces
 
   // Convert something like 8千3萬 into 8千3百萬 (8300*10000)
   str = addMissingUnits(str);
