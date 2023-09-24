@@ -24,7 +24,7 @@ export const toArabicString = (
 
   return source.replace(NUMBER_IN_STRING_REGEX, (match) => {
     if (match.length >= minimumCharactersInNumber) {
-      return toInteger(match.replaceAll(/[\s,_]/gu, "")).toString();
+      return toInteger(match.replace(/[\s,_]/gu, "")).toString();
     }
     return match;
   });
