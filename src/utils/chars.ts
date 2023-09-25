@@ -79,7 +79,7 @@ export const afterManMultipliers = ["萬", "万", "億", "亿"];
  */
 export const NUMBER_IN_STRING_REGEX = new RegExp(
   `(?![0]+)(?:(?:\\d+(?:[.,\\s]\\d+)*)*)(?:[\\d${characterList}]+)`,
-  "gu"
+  "gu",
 );
 /** For converting strings like 8千3萬 into 8千3百萬. */
 export const reverseMultipliers: Record<string, string> = {

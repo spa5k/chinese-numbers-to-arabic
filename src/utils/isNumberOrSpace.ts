@@ -14,7 +14,7 @@ export const isNumberOrSpace = (character: string): boolean => {
   // Make sure `character`.length is exactly 1:
   if (!character || character.length !== 1) {
     throw new Error(
-      "isNumberOrSpace() must receive exactly one character for checking."
+      "isNumberOrSpace() must receive exactly one character for checking.",
     );
   }
 

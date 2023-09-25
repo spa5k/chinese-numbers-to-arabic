@@ -11,9 +11,10 @@ import { toInteger } from "./toInteger";
  *    names like 九龍站 into 9龍站.
  * @returns {string} The translated string with Arabic numbers only.
  */
+
 export const toArabicString = (
   source: string,
-  minimumCharactersInNumber = 1
+  minimumCharactersInNumber = 1,
 ): string => {
   if (typeof source !== "string") {
     return source;

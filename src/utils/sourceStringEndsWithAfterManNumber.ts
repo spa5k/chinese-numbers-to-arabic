@@ -10,7 +10,7 @@ import { afterManMultipliers, SINGLE_ARABIC_NUMBER_REGEX } from "./chars";
  * above.
  */
 export const sourceStringEndsWithAfterManNumber = (
-  str: string
+  str: string,
 ): string | null => {
   if (!str) {
     return str;

@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "prettier"
-  ],
+  "extends": ["prettier"],
   "env": {
     "node": true
   },
@@ -9,7 +7,5 @@
     "no-console": "off",
     "unicorn/prefer-string-replace-all": "off"
   },
-  "plugins": [
-    "prettier"
-  ]
+  "plugins": ["prettier"]
 }
