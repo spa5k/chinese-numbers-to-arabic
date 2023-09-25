@@ -10,8 +10,9 @@ export const tsup: Options = {
   format: ["cjs", "esm"],
   minify: false,
   bundle: true,
-  target: ["es2019", "chrome80"],
+  target: ["es2020", "chrome90"],
   watch: env === "development",
   skipNodeModulesBundle: true,
   entryPoints: ["src/index.ts"],
+  treeshake: true,
 };
